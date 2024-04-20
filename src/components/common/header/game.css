@@ -1,0 +1,41 @@
+/* App.css or your dedicated navigation CSS file */
+
+/* Style for the link */
+.games-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Background effect */
+  .games-link::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background-color: #ffd700; /* Yellow background color */
+    z-index: -1;
+    border-radius: 5px; /* Rounded corners */
+    opacity: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Shadow effect on hover */
+  .games-link:hover::before {
+    opacity: 0.6; /* Adjust opacity on hover */
+  }
+  
+  /* Text styles */
+  .games-link a {
+    color: #de1313; /* Text color */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Add padding for better clickable area */
+  }
+  
+  .games-link a:hover {
+    color: #000; /* Change color on hover */
+  }
+  
